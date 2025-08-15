@@ -1,0 +1,149 @@
+* img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+.first {
+  display: flex;
+  justify-content: center;
+
+  border: none;
+  gap: 24px;
+
+  background: #f5f5f7;
+  font-size: 12px;
+}
+
+.first button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+}
+.first1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 24px;
+
+  background: #f5f5f7;
+  font-size: 14px;
+}
+
+.first1 button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+.second {
+  width: 30px;
+  height: 44px;
+}
+
+.navbar-text {
+  background: none;
+  border: none;
+
+  height: 52px;
+}
+
+.hero img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero {
+  width: 100%;
+  aspect-ratio: 1920/692;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero-text {
+  align-items: center;
+  font-size: 3vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.box button {
+  border-radius: 22px;
+  text-align: center;
+  font-size: 1vw;
+  padding: 10px;
+}
+.text1 {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+
+  gap: 16px;
+}
+.grid {
+  display: flex;
+
+  width: 100%;
+  aspect-ratio: 1920/692;
+}
+
+.figure {
+  display: flex;
+  gap: 1%;
+  flex-wrap: wrap;
+}
+.figure-item {
+  width: 49%;
+  display: flex;
+  position: relative;
+  height: 100%;
+
+  aspect-ratio: 1.6;
+
+  flex-shrink: 0;
+}
+.figure-item img {
+  position: absolute;
+  width: 100%;
+}
+.scroll {
+  display: flex;
+  overflow-x: auto;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 0;
+  gap: 10px;
+  scroll-snap-type: mandatory;
+  border: none;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  padding: 12px;
+}
+.foot button {
+  border: none;
+  background-color: silver;
+
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .first { 
+    aspect-ratio: 1920/44;
+    
+}
