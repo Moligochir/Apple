@@ -13,7 +13,7 @@
     }
     .first {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       border: none;
       gap: 24px;
@@ -28,7 +28,23 @@
       cursor: pointer;
       width: 100%;
     }
+    .first1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      gap: 24px;
 
+      background: #f5f5f7;
+      font-size: 1.2vw;
+    }
+
+    .first1 button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      width: 100%;
+    }
     .second {
       width: 30px;
       height: 44px;
@@ -131,7 +147,7 @@
       border-radius: 100%;
       cursor: pointer;
     }
-    @media only screen and (max-width: 390px) {
+    @media only screen and (max-width: 768px) {
     }
   </style>
   <body>
@@ -143,7 +159,7 @@
       <button>IMac</button>
       <button>IPad</button>
       <button>IPhone</button>
-      <button>Watch</button>
+      <button>IWatch</button>
       <button>Vision</button>
       <button>Airpods</button>
       <button>TV & Home</button>
@@ -159,7 +175,7 @@
       </button>
       <button><img class="second" src="Item.png" alt="icon3" /></button>
     </div>
-    <div class="first navbar-text">
+    <div class="first1 navbar-text">
       We’re donating $5 to the Global Fund for every purchase made with
       Apple Pay at Apple. Through 12/8.
     </div>
