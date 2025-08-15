@@ -1,0 +1,284 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+
+      }
+
+      .first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        gap: 24px;
+        width: 100%;
+        background: #f5f5f7;
+        font-size: 1.2vw;
+      }
+
+      .first button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .second {
+        width: 30px;
+        height: 44px;
+      }
+
+      .navbar-text {
+        background-color: white;
+        font-size: 1vw;
+        height: 52px;
+      }
+
+      .hero img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .hero {
+        width: 100%;
+        aspect-ratio: 1920/692;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-text {
+        align-items: center;
+        font-size: 3vw;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        display: flex;
+        justify-content:center
+        gap: 16px;
+       }
+      .box button {
+        border-radius: 22px;
+        text-align: center;
+        font-size: 1vw;
+        padding: 10px;
+      }
+      .text1 {
+        display: flex;
+        margin-top: 55px;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .grid {
+        display: flex;
+
+        width: 100%;
+        aspect-ratio: 1920/692;
+      }
+      .grid-item {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 85%;
+        position: relative;
+      }
+      .grid-item > img {
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="first">
+      <button>
+        <img class="second" src="Item → Link - Apple.png" alt="icon1" />
+      </button>
+      <button>Store</button>
+      <button>Mac</button>
+      <button>IPad</button>
+      <button>IPhone</button>
+      <button>Watch</button>
+      <button>Vision</button>
+      <button>Airpods</button>
+      <button>TV & Home</button>
+      <button>Entertainment</button>
+      <button>Accessories</button>
+      <button>Support</button>
+      <button>
+        <img
+          class="second"
+          src="Item → Button - Search apple.com.png"
+          alt="icon2"
+        />
+      </button>
+      <button><img class="second" src="Item.png" alt="icon3" /></button>
+    </div>
+    <div class="first navbar-text">
+      We’re donating $5 to the Global Fund for every purchase made with
+      Apple Pay at Apple. Through 12/8.
+    </div>
+    <div class="hero">
+      <img src="Background.png" alt="background" />
+      <div class="text1">
+        <div class="hero-text">iPhone 16 Pro</div>
+        <div style="font-size: 1.2vw" class="hero-text">
+          Hello, Apple Intelligence.
+        </div>
+        <div class="box">
+          <button
+            style="
+              background-color: #0071e3;
+              border-color: #0071e3;
+              color: white;
+            "
+          >
+            Learn more
+          </button>
+          <button
+            style="
+              background-color: transparent;
+              border-color: #0071e3;
+              color: #0071e3;
+            "
+          >
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <img src="figure1.png" alt="figure1" />
+      <div class="text1">
+        <div class="hero-text">iPhone 16</div>
+        <div style="font-size: 1.2vw" class="hero-text">
+          Hello, Apple Intelligence.
+        </div>
+        <div class="box">
+          <button
+            style="background-color: white; border-color: white; color: black"
+          >
+            Learn more
+          </button>
+          <button
+            style="
+              background-color: transparent;
+              border-color: white;
+              color: white;
+            "
+          >
+            Buy
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <img src="Figure2.png" alt="Figure2" />
+      <div style="margin-top: 270px" class="text1">
+        <div style="color: black" class="hero-text">Gift magic.</div>
+        <div style="font-size: 1.2vw; color: black" class="hero-text">
+          Make their holiday wish come true.
+        </div>
+        <div class="box">
+          <button
+            style="
+              background-color: #0071e3;
+              border-color: #0071e3;
+              color: white;
+            "
+          >
+            Shop gifts
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="grid-item">
+        <img src="6in1.png" alt="" />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1vw;
+            margin-top: 30px;
+            position: absolute;
+            width: 100%;
+            gap: 9px;
+          "
+        >
+          <img src="headimg.png" alt="" />Two sizes. Faster chip. Does it all.
+          <div class="box">
+            <button
+              style="
+                background-color: #0071e3;
+                border-color: #0071e3;
+                color: white;
+              "
+            >
+              Learn more</button
+            ><button
+              style="
+                background-color: transparent;
+                border-color: #0071e3;
+                color: #0071e3;
+              "
+            >
+              Buy
+            </button>
+          </div>
+          <h5 style="margin-top: 190px">Hello, Apple Intelligence.</h5>
+        </div>
+      </div>
+
+      <div class="grid-item">
+        <img src="6in2.png" alt="" />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1vw;
+            margin-top: 30px;
+            position: absolute;
+            width: 100%;
+            gap: 9px;
+          "
+        >
+          <div class="hero-text text1">AirPods Pro 2</div>
+          <div>Now with a Hearing Aid feature.2</div>
+          <div>
+            <button
+              style="
+                background-color: #0071e3;
+                border-color: #0071e3;
+                color: white;
+              "
+            >
+              Learn more</button
+            ><button
+              style="
+                background-color: transparent;
+                border-color: #0071e3;
+                color: #0071e3;
+              "
+            >
+              Buy
+            </button>
+          </div>
+          <button
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

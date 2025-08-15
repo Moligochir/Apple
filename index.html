@@ -1,113 +1,165 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-
-      }
-
-      .first {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-        gap: 24px;
-        width: 100%;
-        background: #f5f5f7;
-        font-size: 1.2vw;
-      }
-
-      .first button {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-      }
-
-      .second {
-        width: 30px;
-        height: 44px;
-      }
-
-      .navbar-text {
-        background-color: white;
-        font-size: 1vw;
-        height: 52px;
-      }
-
-      .hero img {
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-      }
-
-      .hero {
-        width: 100%;
-        aspect-ratio: 1920/692;
-        display: flex;
-        justify-content: center;
-      }
-
-      .hero-text {
-        align-items: center;
-        font-size: 3vw;
-        color: white;
-        display: flex;
-        justify-content: center;
-      }
-      .box {
-        display: flex;
-        justify-content:center
-        gap: 16px;
-       }
-      .box button {
-        border-radius: 22px;
-        text-align: center;
-        font-size: 1vw;
-        padding: 10px;
-      }
-      .text1 {
-        display: flex;
-        margin-top: 55px;
-        flex-direction: column;
-        gap: 16px;
-      }
-      .grid {
-        display: flex;
-
-        width: 100%;
-        aspect-ratio: 1920/692;
-      }
-      .grid-item {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 85%;
-        position: relative;
-      }
-      .grid-item > img {
-        position: absolute;
-        width: 100%;
-        z-index: -1;
-      }
-    </style>
   </head>
+  <style>
+    *img {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+    .first {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      gap: 24px;
 
+      background: #f5f5f7;
+      font-size: 1.2vw;
+    }
+
+    .first button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      width: 100%;
+    }
+    .first1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      gap: 24px;
+
+      background: #f5f5f7;
+      font-size: 1.2vw;
+    }
+
+    .first1 button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      width: 100%;
+    }
+    .second {
+      width: 30px;
+      height: 44px;
+    }
+
+    .navbar-text {
+      background: none;
+      border: none;
+
+      height: 52px;
+    }
+
+    .hero img {
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+
+    .hero {
+      width: 100%;
+      aspect-ratio: 1920/692;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    .hero-text {
+      align-items: center;
+      font-size: 3vw;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    .box button {
+      border-radius: 22px;
+      text-align: center;
+      font-size: 1vw;
+      padding: 10px;
+    }
+    .text1 {
+      display: flex;
+      padding-top: 50px;
+      flex-direction: column;
+
+      gap: 16px;
+    }
+    .grid {
+      display: flex;
+
+      width: 100%;
+      aspect-ratio: 1920/692;
+    }
+
+    .figure {
+      display: flex;
+      gap: 1%;
+      flex-wrap: wrap;
+    }
+    .figure-item {
+      width: 49%;
+      display: flex;
+      position: relative;
+      height: 100%;
+
+      aspect-ratio: 1.6;
+
+      flex-shrink: 0;
+    }
+    .figure-item img {
+      position: absolute;
+      width: 100%;
+    }
+    .scroll {
+      display: flex;
+      overflow-x: auto;
+      flex-shrink: 0;
+      width: 100%;
+      padding: 0;
+      gap: 10px;
+      scroll-snap-type: mandatory;
+      border: none;
+    }
+    .foot {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      align-items: center;
+      padding: 12px;
+    }
+    .foot button {
+      border: none;
+      background-color: silver;
+
+      height: 12px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 768px) {
+    }
+  </style>
   <body>
     <div class="first">
       <button>
         <img class="second" src="Item → Link - Apple.png" alt="icon1" />
       </button>
       <button>Store</button>
-      <button>Mac</button>
+      <button>IMac</button>
       <button>IPad</button>
       <button>IPhone</button>
-      <button>Watch</button>
+      <button>IWatch</button>
       <button>Vision</button>
       <button>Airpods</button>
       <button>TV & Home</button>
@@ -123,7 +175,7 @@
       </button>
       <button><img class="second" src="Item.png" alt="icon3" /></button>
     </div>
-    <div class="first navbar-text">
+    <div class="first1 navbar-text">
       We’re donating $5 to the Global Fund for every purchase made with
       Apple Pay at Apple. Through 12/8.
     </div>
@@ -181,9 +233,9 @@
         </div>
       </div>
     </div>
-    <div class="hero">
-      <img src="Figure2.png" alt="Figure2" />
-      <div style="margin-top: 270px" class="text1">
+    <div style="align-items: end" class="hero">
+      <img src="Figure2.png" alt="figure2" />
+      <div style="display: flex; padding-bottom: 50px" class="text1">
         <div style="color: black" class="hero-text">Gift magic.</div>
         <div style="font-size: 1.2vw; color: black" class="hero-text">
           Make their holiday wish come true.
@@ -202,83 +254,35 @@
       </div>
     </div>
 
-    <div class="grid">
-      <div class="grid-item">
-        <img src="6in1.png" alt="" />
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1vw;
-            margin-top: 30px;
-            position: absolute;
-            width: 100%;
-            gap: 9px;
-          "
-        >
-          <img src="headimg.png" alt="" />Two sizes. Faster chip. Does it all.
-          <div class="box">
-            <button
-              style="
-                background-color: #0071e3;
-                border-color: #0071e3;
-                color: white;
-              "
-            >
-              Learn more</button
-            ><button
-              style="
-                background-color: transparent;
-                border-color: #0071e3;
-                color: #0071e3;
-              "
-            >
-              Buy
-            </button>
-          </div>
-          <h5 style="margin-top: 190px">Hello, Apple Intelligence.</h5>
-        </div>
+    <div>
+      <div class="figure">
+        <div class="figure-item"><img src="6in1.png" alt="" /></div>
+        <div class="figure-item"><img src="6in2.png" alt="" /></div>
+        <div class="figure-item"><img src="6in3.png" alt="" /></div>
+        <div class="figure-item"><img src="6in4.png" alt="" /></div>
+        <div class="figure-item"><img src="6in5.png" alt="" /></div>
+        <div class="figure-item"><img src="6in6.png" alt="" /></div>
       </div>
-
-      <div class="grid-item">
-        <img src="6in2.png" alt="" />
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1vw;
-            margin-top: 30px;
-            position: absolute;
-            width: 100%;
-            gap: 9px;
-          "
-        >
-          <div class="hero-text text1">AirPods Pro 2</div>
-          <div>Now with a Hearing Aid feature.2</div>
-          <div>
-            <button
-              style="
-                background-color: #0071e3;
-                border-color: #0071e3;
-                color: white;
-              "
-            >
-              Learn more</button
-            ><button
-              style="
-                background-color: transparent;
-                border-color: #0071e3;
-                color: #0071e3;
-              "
-            >
-              Buy
-            </button>
-          </div>
-          <button
-        </div>
-      </div>
+    </div>
+    <div class="scroll">
+      <div><img src="scroll1.png" alt="" /></div>
+      <div><img src="scroll2.png" alt="" /></div>
+      <div><img src="Scroll3.png" alt="" /></div>
+    </div>
+    <div class="foot">
+      <button style="background-color: gray"></button><button></button
+      ><button></button><button></button><button></button><button></button
+      ><button></button><button></button><button></button><button></button>
+    </div>
+    <div style="gap: 16px" class="scroll">
+      <div><img src="foot1.png" alt="" /></div>
+      <div><img src="foot2.png" alt="" /></div>
+      <div><img src="foot3.png" alt="" /></div>
+      <div><img src="foot5.png" alt="" /></div>
+      <div><img src="foot4.png" alt="" /></div>
+      <div><img src="foot3.png" alt="" /></div>
+      <div><img src="foot5.png" alt="" /></div>
+      <div><img src="foot4.png" alt="" /></div>
     </div>
   </body>
 </html>
